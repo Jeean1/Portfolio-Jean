@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: white; */
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-weight: 200;
+  letter-spacing: 1.2px;
 }
 
 .container_aboutMe {
@@ -357,4 +363,54 @@
   width: 100%;
   height: 47rem;
   position: relative;
+  margin-top: 12rem;
+}
+
+.cv_and_form {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  gap: 15rem;
+}
+
+.h3_contactMe {
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.text_contactme {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 2rem;
+}
+
+.text_justify {
+  text-align: justify;
+}
+
+.form_contactme {
+  width: 45%;
+}
+
+.footer_container {
+  width: 100%;
+  height: 15rem;
+  background-color: black;
+  padding-top: 3rem;
+}
+
+.info_footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.sites_info {
+  display: flex;
+  margin: auto;
+  gap: 3rem;
 }

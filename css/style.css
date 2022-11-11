@@ -594,7 +594,7 @@ body {
 
   .experience_container_main {
     width: 100%;
-    height: 160rem;
+    height: 140rem;
   }
 
   .experience_container {
@@ -613,6 +613,30 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+  }
+
+  .text_project {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    color: #fff;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text_project p {
+    text-align: justify;
+    padding: 4% 10%;
+  }
+
+  .text_project a {
+    color: white;
+    margin: 0px;
+    font-size: 15px;
   }
 
   .experience_container_main h3 {
@@ -645,9 +669,52 @@ body {
     padding: 1.5rem;
   }
 
-  .icons_in_project_backend{
+  .icons_in_project_backend {
     width: 33% !important;
-    height: 60% !important;
+    height: 35% !important;
   }
 
+  /* contac me section */
+
+  .contactme_container {
+    width: 100%;
+    height: 70rem;
+    position: relative;
+    margin-top: 12rem;
+  }
+
+  .h3_contactMe {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .cv_and_form {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    gap: 10rem;
+    flex-direction: column;
+  }
+
+  .text_contactme {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .form_contactme {
+    width: 100%;
+  }
+
+  /* footer */
+
+  .info_footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+  }
 }

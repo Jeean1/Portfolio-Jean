@@ -5,9 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
@@ -19,6 +23,7 @@
 </head>
 
 <body>
+
   <!-- Nav Menú -->
   <section class="section1">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4 fixed-top">
@@ -31,18 +36,18 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto ps-5">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Acerca de mi
+              <a class="nav-link active" href="#aboutMeId">Acerca de mi
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Habilidades</a>
+              <a class="nav-link" href="#skillsId">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experiencia</a>
+              <a class="nav-link" href="#experienceId">Experiencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contactame</a>
+              <a class="nav-link" href="#contactMeId">Contactame</a>
             </li>
           </ul>
         </div>
@@ -52,14 +57,16 @@
 
   <!-- Main Page -->
   <section>
-    <div class="container_aboutMe">
-      <div class="img_aboutMe_container sizing_elements_AboutMe">
-        <img src="./imgs/imgComprimidaJean.JPG" class="img_details" />
-      </div>
+    <div data-aos="zoom-in-up">
+      <div class="container_aboutMe">
+        <div class="img_aboutMe_container sizing_elements_AboutMe">
+          <img src="./imgs/imgComprimidaJean.JPG" class="img_details" />
+        </div>
 
-      <div class="text_aboutMe_container sizing_elements_AboutMe">
-        <div class="text_sizing_Container">
-          <h3> &#128075 Mucho gusto en saludarte, mi nombre es Jean &#128516 &#129488</h3>
+        <div class="text_aboutMe_container sizing_elements_AboutMe">
+          <div class="text_sizing_Container">
+            <h3> &#128075 Mucho gusto en saludarte, mi nombre es Jean &#128516 &#129488</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -68,15 +75,21 @@
   <!-- Aboute Me -->
   <section>
 
-    <div class="description_am_container">
-      <div class="descriptionMe_Text">
-        <h3 class="h3_center">Acerca de mi</h3>
-        <p>Soy una persona qué le encanta solucionar problemas, alguien muy resolutivo, con buena capacidad de trabajo
-          en equipo. Alguien qué siempre visualiza el cómo llegar a la meta qué se plantee, sabiendo guardar paciencia &
-          perseverancia mientras disfruto del proceso. Alguien qué le gusta muchísimo los retos, también me gusta mucho
-          investigar y analizar del cómo y el por qué de las cosas. Realmente me gusta muchísimo ser muy creativo en mis
-          propuestas en soluciones, siempre y cuándo trato de realizar un código limpio para qué a mi equipo de trabajo
-          se le sea fácil de comprender y optimizar tiempo en trabajo en equipo.</p>
+    <div class="description_am_container" id="aboutMeId">
+      <div data-aos="fade-right">
+        <div class="descriptionMe_Text">
+          <h3 class="h3_center">Acerca de mi</h3>
+          <p>Soy una persona qué le encanta solucionar problemas, alguien muy resolutivo, con buena capacidad de trabajo
+            en equipo. Alguien qué siempre visualiza el cómo llegar a la meta qué se plantee, sabiendo guardar paciencia
+            &
+            perseverancia mientras disfruto del proceso. Alguien qué le gusta muchísimo los retos, también me gusta
+            mucho
+            investigar y analizar del cómo y el por qué de las cosas. Realmente me gusta muchísimo ser muy creativo en
+            mis
+            propuestas en soluciones, siempre y cuándo trato de realizar un código limpio para qué a mi equipo de
+            trabajo
+            se le sea fácil de comprender y optimizar tiempo en trabajo en equipo.</p>
+        </div>
       </div>
     </div>
 
@@ -85,232 +98,257 @@
   </section>
 
   <!-- Skills -->
-  <section>
-    <div class="skills_container">
+  <section id="skillsId">
+    <div data-aos="fade-up">
 
-      <h3 class="h3_center">Habilidades</h3>
+      <div class="skills_container">
 
-      <div class="js_box">
-        <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png"
-          style="width: 100%; height: 100%">
+        <h3 class="h3_center">Habilidades</h3>
+
+        <div class="js_box">
+          <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+
+
+        <!-- Back end -->
+
+        <div class="box_icon_nodejs">
+          <img src="https://victorroblesweb.es/wp-content/uploads/2018/01/nodejs-victorroblesweb.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_express">
+          <img src="https://gitconnected.com/public/images/tutorials/express-js" style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_sequelize">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-png-transparent.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_postgres">
+          <img src="https://www.sistemasumgcoban.com/wp-content/uploads/2018/05/postgresql-logo.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_postman">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0057/5668/2355/files/Postman-logo-orange-2021_1155x.png?v=1637252529"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_npm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <!-- Front end -->
+
+        <div class="box_icon_html">
+          <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_css">
+          <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_btstrap">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_btswacth">
+          <img
+            src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_react">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+            style="width: 100%; height: 100%">
+        </div>
+
+        <div class="box_icon_redux">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" style="width: 100%; height: 100%">
+        </div>
+
+
+
+
+
+
+
+
+
       </div>
-
-
-
-      <!-- Back end -->
-
-      <div class="box_icon_nodejs">
-        <img src="https://victorroblesweb.es/wp-content/uploads/2018/01/nodejs-victorroblesweb.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_express">
-        <img src="https://gitconnected.com/public/images/tutorials/express-js" style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_sequelize">
-        <img src="https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-png-transparent.png" style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_postgres">
-        <img
-          src="https://www.sistemasumgcoban.com/wp-content/uploads/2018/05/postgresql-logo.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_postman">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0057/5668/2355/files/Postman-logo-orange-2021_1155x.png?v=1637252529"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_npm">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <!-- Front end -->
-
-      <div class="box_icon_html">
-        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_css">
-        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_btstrap">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_btswacth">
-        <img
-          src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_react">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-          style="width: 100%; height: 100%">
-      </div>
-
-      <div class="box_icon_redux">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" style="width: 100%; height: 100%">
-      </div>
-
-
-
-
-
-
-
-
-
     </div>
   </section>
 
   <!-- Experience -->
-  <section>
-    <div class="experience_container_main">
+  <section id="experienceId">
+    <div data-aos="fade-right">
 
-      <h3>Experiencia</h3>
+      <div class="experience_container_main">
 
-      <div class="experience_container">
+        <h3>Experiencia</h3>
 
-        <div class="img_box_exp">
-          <img src="./imgs/eCommerceImg.png" style="width: 100%; height: 100%">
-  
-          <div class="text_project">
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quas dolores voluptates laboriosam nesciunt soluta excepturi rerum, inventore maiores omnis illum ullam. Fugiat sint voluptate ipsam ratione ullam tempore!</p>
-           <a href="#">Link del proyecto</a>
+        <div class="experience_container">
+          <div class="img_box_exp">
+            <img src="./imgs/eCommerceImg.png" style="width: 100%; height: 100%">
+
+            <div class="text_project">
+              <p>E-commerce elaborado con React JS, utilizando Redux y al mismo tiempo consumiendo una API. Se utiliza
+                una base de datos para crearse y almacenar un usuario, y almacenar compras. Lo visual fue creado con los
+                fundamentos de CSS/HTML</p>
+              <a href="#">Link del proyecto</a>
+
+            </div>
 
           </div>
-  
+
+          <div class="img_box_exp">
+            <img src="./imgs/rickMortyBaseData.png" style="width: 100%; height: 100%">
+
+            <div class="text_project">
+              <p>Wiki de una serie animada, utilizando React. Consumo una API existente y al tiempo trayendo la
+                información. Diseño responsivo aplicado para moviles. Se utilizo CSS/HTML para brindar una suave y
+                agradable estetica al sitio web.</p>
+              <a href="#">Link del proyecto</a>
+            </div>
+
+          </div>
+
+          <div class="img_box_exp">
+            <img src="./imgs/Pokedex.png" style="width: 100%; height: 100%">
+
+            <div class="text_project">
+              <p>Wiki de una serie animada, utilizando React. Consumo una API existente y al tiempo trayendo la
+                información. Diseño responsivo aplicado para moviles. Se utilizo CSS/HTML para brindar una suave y
+                agradable estetica al sitio web.</p>
+              <a href="#">Link del proyecto</a>
+            </div>
+
+          </div>
         </div>
-  
-        <div class="img_box_exp">
-          <img src="./imgs/rickMortyBaseData.png" style="width: 100%; height: 100%">
 
-          <div class="text_project">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quas dolores voluptates laboriosam nesciunt soluta excepturi rerum, inventore maiores omnis illum ullam. Fugiat sint voluptate ipsam ratione ullam tempore!</p>
-            <a href="#">Link del proyecto</a>
-           </div>
+        <div class="experience_container_backend">
 
+          <div class="exp_backend">
+
+            <div class="multi_logos_container">
+              <img src="https://www.scottbrady91.com/img/logos/swagger-banner.png" style="width: 60%; height: 30%"
+                class="icons_in_project_backend">
+              <img src="https://www.sistemasumgcoban.com/wp-content/uploads/2018/05/postgresql-logo.png"
+                style="width: 55%; height: 55%" class="icons_in_project_backend">
+              <img src="https://victorroblesweb.es/wp-content/uploads/2018/01/nodejs-victorroblesweb.png"
+                style="width: 55%; height: 55%" class="icons_in_project_backend">
+
+
+            </div>
+
+            <div class="project_description">
+              <h3>Project Fast Food App</h3>
+              <p>Consta de un servidor realizado en Express, utilizando cómo base datos postgres. Implementación de
+                middlewares para fomentar seguridad en el servidor tanto cómo nivel de un usuario a nivel de
+                peticiones HTTP evitando así información/código malicioso. En el manejo de sesiones entre usuarios y
+                acceso al servidor utilizo JSON Web Token para así una mayor seguridad en el servidor. A la hora de
+                digitar información sensible se encriptarán los datos. Manejo de ORM para una comunicación más
+                sencilla y eficáz entre la base de datos y el servidor</p>
+              <hr>
+              <a href="https://food-app-express-production.up.railway.app/">Link de la documentación</a>
+              <hr>
+              <a href="https://github.com/Jeean1/Food-App-Express">Link del proyecto en Github</a>
+              <hr>
+            </div>
+
+          </div>
         </div>
-  
-        <div class="img_box_exp">
-          <img src="./imgs/Pokedex.png" style="width: 100%; height: 100%">
 
-          <div class="text_project">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quas dolores voluptates laboriosam nesciunt soluta excepturi rerum, inventore maiores omnis illum ullam. Fugiat sint voluptate ipsam ratione ullam tempore!</p>
-            <a href="#">Link del proyecto</a>
-           </div>
-
-        </div>
-        
       </div>
 
-
-      <div class="experience_container_backend">
-
-        <div class="exp_backend">
-
-          <div class="multi_logos_container">
-            <img src="https://www.scottbrady91.com/img/logos/swagger-banner.png" style="width: 60%; height: 30%" class="icons_in_project_backend">
-            <img src="https://www.sistemasumgcoban.com/wp-content/uploads/2018/05/postgresql-logo.png" style="width: 55%; height: 55%" class="icons_in_project_backend">
-            <img src="https://victorroblesweb.es/wp-content/uploads/2018/01/nodejs-victorroblesweb.png" style="width: 55%; height: 55%" class="icons_in_project_backend">
-
-
-          </div>
-
-          <div class="project_description">
-            <h3>Project Fast Food App</h3>
-            <p>Consta de un servidor realizado en Express, utilizando cómo base datos postgres. Implementación de middlewares para fomentar seguridad en el servidor tanto cómo nivel de un usuario a nivel de peticiones HTTP evitando así información/código malicioso. En el manejo de sesiones entre usuarios y acceso al servidor utilizo JSON Web Token para así una mayor seguridad en el servidor. A la hora de digitar información sensible se encriptarán los datos. Manejo de ORM para una comunicación más sencilla y eficáz entre la base de datos y el servidor</p>
-            <hr>
-            <a href="https://food-app-express-production.up.railway.app/">Link de la documentación</a>
-            <hr>
-            <a href="https://github.com/Jeean1/Food-App-Express">Link del proyecto en Github</a>
-            <hr>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      
     </div>
+
   </section>
 
 
-<!-- Contactame -->
-<section>
-  <div class="contactme_container">
+  <!-- Contactame -->
+  <section id="contactMeId">
+    <div class="contactme_container">
+      <div data-aos="fade-right">
 
-    <h3 class="h3_contactMe">Contactame</h3>
+
+        <h3 class="h3_contactMe">Contactame</h3>
 
 
-  <div class="cv_and_form">
+        <div class="cv_and_form">
 
-    <div class="text_contactme">
-      <p class="text_justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas magni vero doloribus cum facere, praesentium vitae cupiditate nobis natus inventore magnam corporis. Adipisci dolorem officia ducimus, libero quibusdam similique omnis.</p>
+          <div class="text_contactme">
+            <p class="text_justify">No dudes en contactarme sí mis proyectos y estilo te han gustado. Soy Jean, y la
+              verdad encantado colaborar en algún proyecto qué plantees. ¡Envíame un mensaje!</p>
 
-      <p><i class="fa-solid fa-envelope" style="font-size: 1.5rem;"></i> micorreo@mail.com</p>
-      <p><i class="fa-solid fa-phone" style="font-size: 1.5rem;"></i> +77 77777777</p>
+            <p><i class="fa-solid fa-envelope" style="font-size: 1.5rem;"></i> giraldojeanpool@hotmail.com</p>
+            <p><i class="fa-solid fa-phone" style="font-size: 1.5rem;"></i> +57 316 801 4144</p>
 
-      <a href="./docs/Curriculum-Software-Developer.pdf" download>Descargar curriculum</a>
+            <a href="./docs/Curriculum-Software-Developer.pdf" download>Descargar curriculum</a>
+          </div>
+
+          <div class="form_contactme">
+            <form action="https://formsubmit.co/giraldojeanpool@gmail.com" method="POST">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control input_style" id="exampleFormControlInput1"
+                  placeholder="nombre..." name="name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control input_style" id="exampleFormControlInput1"
+                  placeholder="name@example.com..." name="email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejame un comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" type="comments"
+                  name="comments"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer_container">
+
+
+    <div class="info_footer">
+
+      <p style="color: white; font-size: 1.5rem;">@Jeanpol Giraldo - 2022</p>
+      <div class="sites_info">
+        <a href="https://github.com/Jeean1"><i class="fa-brands fa-github"
+            style="font-size: 4rem; color: white"></i></a>
+        <a href="https://www.linkedin.com/in/jeanpol-giraldo-82b000243/"><i class="fa-brands fa-linkedin"
+            style="font-size: 4rem; color: white"></i></a>
+      </div>
+
     </div>
 
-    <div class="form_contactme">
-      <form action="https://formsubmit.co/giraldojeanpool@gmail.com" method="POST">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-          <input type="text" class="form-control input_style" id="exampleFormControlInput1" placeholder="nombre..." name="name">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control input_style" id="exampleFormControlInput1" placeholder="name@example.com..." name="email" >
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Dejame un comentario</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" type="comments" name="comments"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark">Enviar</button>        
-      </form>
-    </div>
 
   </div>
 
-    
-  </div>
-</section>
-
-<!-- Footer -->
-<div class="footer_container">
-
-
-  <div class="info_footer">
-
-    <p style="color: white; font-size: 1.5rem;">@Jeanpol Giraldo - 2022</p>
-    <div class="sites_info">
-      <a href="https://github.com/Jeean1"><i class="fa-brands fa-github" style="font-size: 4rem; color: white"></i></a>
-      <a href="https://www.linkedin.com/in/jeanpol-giraldo-82b000243/"><i class="fa-brands fa-linkedin" style="font-size: 4rem; color: white"></i></a>
-    </div>
-
-  </div>
-
-
-</div>
 
 
 
 
 </body>
 <script src="index.js"></script>
+<script> AOS.init();</script>
 
 </html>
